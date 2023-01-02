@@ -2,7 +2,7 @@ name: Prerelease Suffix to Compose the Version Format
 
 description: 'Action to find the specific suffix to compose the version format'
 
-imputs:
+inputs:
   name-branch:
     required: true
     description: Source branch name
@@ -12,7 +12,7 @@ runs:
   steps:
     - name: Find the specific suffix to compose the version format
       env:
-        NAME_BRANCH: ${{ imputs.name-branch }}
+        NAME_BRANCH: ${{ inputs.name-branch }}
       run: |
         chmod +x ${{ github.action_path }}/scripts/prerelease_suffix.py
         ${{ github.action_path }}/scripts/prerelease_suffix.py
