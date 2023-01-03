@@ -20,7 +20,7 @@ jobs:
       id: versioning
       uses: PaulHatch/semantic-version@v4.0.2
       with:
-        tag_prefix: ''
+        tag_prefix: 'v'
         major_pattern: "break:"
         minor_pattern: "feat:"
         patch_pattern: "fix:"
